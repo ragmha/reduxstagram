@@ -5,7 +5,12 @@ import registerServiceWorker from './registerServiceWorker';
 import configureStore from './store';
 import Root from './components/Root';
 
-const store = configureStore();
+import posts from './data/posts';
+import comments from './data/comments';
+
+const preloadedState = { posts, comments };
+
+const store = configureStore(preloadedState);
 
 render(<Root store={store} />, document.getElementById('root'));
 registerServiceWorker();

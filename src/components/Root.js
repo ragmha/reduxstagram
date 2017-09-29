@@ -3,13 +3,16 @@ import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 
-import App from './App';
 import '../styles/App.css';
+import App from './App';
+import ContentRouter from './ContentRouter';
 
 const Root = ({ store }) => (
   <Provider store={store}>
     <BrowserRouter>
-      <App />
+      <App>
+        <ContentRouter />
+      </App>
     </BrowserRouter>
   </Provider>
 );
