@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Main = ({ children }) => (
+const App = ({ children }) => (
   <div>
     <h1>
       <Link to="/">Reduxstagram</Link>
@@ -10,4 +10,4 @@ const Main = ({ children }) => (
   </div>
 );
 
-export default Main;
+export default App;
