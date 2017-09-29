@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
 
-const rootReducer = combineReducers({
-  state: (state = {}) => state,
-});
+import posts from './posts';
+import comments from './comments';
+
+const rootReducer = combineReducers({ posts, comments });
 
 export default rootReducer;
